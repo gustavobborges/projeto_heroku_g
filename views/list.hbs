@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header">{{title}}</div>
+  <div class="card-body">
+    <h5 class="card-title">Lista de Posts</h5>
+    <a href="/form" class="btn btn-success">Adicionar</a>
+    <br><br>
+    {{#each posts}}
+    <div class="card">
+        <div class="card-body">
+            <h5>{{dataValues.name}}</h5>
+            <hr>
+            <p>Telefone: {{dataValues.phone}}</p>
+            <p>Data de Nascimento {{dataValues.dateBirthday}}</p>
+            <p>Gênero: {{dataValues.gender}}</p>
+            <p>E-mail: {{dataValues.email}}</p>
+            <a href="/edit/{{dataValues.id}}" class="btn btn-primary">Editar</a>
+            <a href="/delete/{{dataValues.id}}" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a>
+        </div>
+    </div>
+    <br>
+    {{else}}
+        <p>Nenhum dado encontrado!</p>
+    {{/each}}
+  </div>
+</div>

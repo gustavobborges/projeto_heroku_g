@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="card-header">Formulário</div>
+  <div class="card-body">
+    <h5 class="card-title">Dados da Inscrição</h5>
+    <form action="/add" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name">
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" name="phone">
+        </div>
+
+        <div class="mb-3">
+            <label for="dateBirthday" class="form-label">Birthday</label>
+            <input type="date" class="form-control" name="dateBirthday">
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email">
+        </div>
+
+        <div class="mb-3">
+            <label for="gender" class="form-label">Gender</label>
+            <input type="gender" class="form-control" name="gender">
+        </div>
+        <a href="/list" class="btn btn-secondary">Voltar</a>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </div>
+</div>
